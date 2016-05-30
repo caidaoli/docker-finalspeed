@@ -1,0 +1,16 @@
+self:
+    build: .
+    ports:
+      - "4222:2222"
+      - "4440:8443"
+    volumes:
+      - ./self:/app
+
+mrslove:
+    build: .
+    ports:
+      - "4441:8443"
+    volumes:
+      - ./mrslove:/app
+
+
